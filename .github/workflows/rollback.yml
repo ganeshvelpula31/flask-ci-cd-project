@@ -21,9 +21,9 @@ jobs:
 
       - name: Re-tag previous image as latest
         run: |
-          docker pull yourdockerhubuser/flask-devops-app:previous
-          docker tag yourdockerhubuser/flask-devops-app:previous yourdockerhubuser/flask-devops-app:latest
-          docker push yourdockerhubuser/flask-devops-app:latest
+          docker pull ganesh3031/flask-devops-app:previous
+          docker tag ganesh3031/flask-devops-app:previous yourdockerhubuser/flask-devops-app:latest
+          docker push ganesh3031/flask-devops-app:latest
 
       - name: Confirm rollback
         run: echo "Rolled back to previous image and pushed as latest"
