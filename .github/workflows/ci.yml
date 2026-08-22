@@ -43,9 +43,9 @@ jobs:
 
       - name: Preserve previous image as rollback tag
         run: |
-          docker pull yourdockerhubuser/flask-devops-app:latest || true
-          docker tag yourdockerhubuser/flask-devops-app:latest yourdockerhubuser/flask-devops-app:previous || true
-          docker push yourdockerhubuser/flask-devops-app:previous || true
+          docker pull ganesh3031/flask-devops-app:latest || true
+          docker tag ganesh3031/flask-devops-app:latest ganesh3031/flask-devops-app:previous || true
+          docker push ganesh3031/flask-devops-app:previous || true
 
       - name: Build Docker image
         run: |
