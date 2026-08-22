@@ -41,6 +41,12 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+      - name: Preserve previous image as rollback tag
+        run: |
+          docker pull yourdockerhubuser/flask-devops-app:latest || true
+          docker tag yourdockerhubuser/flask-devops-app:latest yourdockerhubuser/flask-devops-app:previous || true
+          docker push yourdockerhubuser/flask-devops-app:previous || true
+
       - name: Build Docker image
         run: |
           docker build -t ganesh3031/flask-devops-app:${{ github.sha }} .
