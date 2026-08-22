@@ -2,5 +2,5 @@
 
 
 
-!\[Flask CI/CD](https://github.com/ganeshvelpula31/flask-ci-cd-project/actions/workflows/ci.yml/badge.svg)
+\[!\[Flask CI/CD](https://github.com/ganeshvelpula31/flask-ci-cd-project/actions/workflows/ci.yml/badge.svg)](https://github.com/ganeshvelpula31/flask-ci-cd-project/actions/workflows/ci.yml)
 
