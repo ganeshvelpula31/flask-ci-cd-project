@@ -22,7 +22,7 @@ jobs:
       - name: Re-tag previous image as latest
         run: |
           docker pull ganesh3031/flask-devops-app:previous
-          docker tag ganesh3031/flask-devops-app:previous yourdockerhubuser/flask-devops-app:latest
+          docker tag ganesh3031/flask-devops-app:previous ganesh3031/flask-devops-app:latest
           docker push ganesh3031/flask-devops-app:latest
 
       - name: Confirm rollback
