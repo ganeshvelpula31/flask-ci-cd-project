@@ -49,7 +49,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t ganesh3031/flask-devops-app:${{ github.sha }} -t ganesh3031/flask-devops-app:latest
+          docker build -t ganesh3031/flask-devops-app:${{ github.sha }} -t ganesh3031/flask-devops-app:latest .
 
       - name: Push Docker image
         run: |
